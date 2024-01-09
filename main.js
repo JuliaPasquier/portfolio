@@ -1,4 +1,8 @@
 
+var btn = document.querySelector('#myBtn');
+var modal = document.querySelector('.modal');
+var close = document.querySelector('.close');
+
 btn.onclick = function () {
     modal.style.display = "block";
 }
@@ -17,19 +21,17 @@ window.onclick = function (event) {
 var menuIcon = document.querySelector('.menu-icon');
 var menu = document.querySelector('.menu');
 
-// menuIcon.addEventListener('click', function () {
-//     menu.classList.toggle('menu-open');
-// });
+menuIcon.addEventListener('click', function () {
+    menu.classList.toggle('menu-open');
+});
 // Close the dropdown menu if the user clicks outside of it
-window.onclick = function (event) {
-    if (!event.target.matches('.menu-icon')) {
-        var dropdowns = document.getElementsByClassName("menu");
-        var i;
-        for (i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show')) {
-                openDropdown.classList.remove('show');
-            }
+if (!event.target.matches('.menu-icon')) {
+    var dropdowns = document.getElementsByClassName("menu");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
         }
     }
 }

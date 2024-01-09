@@ -354,10 +354,11 @@
     text-decoration: none;
     cursor: pointer;
   }
-  button#myBtn {
+
+ #myBtn {
     display: flex;
     margin: 0 auto;
-    background-color: transparent;
+    background-color: cyan;
     text-transform: uppercase;
     text-align: center;
     color: black;
@@ -370,6 +371,11 @@
     cursor: pointer;
   }
   
+  #myBtn:hover {
+    box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan,
+      0 0 200px cyan;
+  }
+
   .card-container {
     display: flex;
     flex-direction: row;
