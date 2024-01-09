@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script src="main.js" async></script>
+
+
+
+    <title>Portfolio Julia</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="profil">
+            <img class="img-profil" src="photo de profil.jpg">
+        </div>
+        <nav class="navbar">
+            <a href="#présentation">Présentation</a>
+            <a href="#projets">Projets</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="home" id="présentation">
+        <div class="content">
+            <div class="home-content">
+                <h1>Julia Pasquier</h1>
+
+                <h3>Full-Stack développeuse</h3>
+                <div class="icons">
+                    <a href="#"><i class='bx bxl-html5'></i></a>
+                    <a href="#"><i class='bx bxl-css3'></i></a>
+                    <a href="#"><i class='bx bxl-javascript'></i></a>
+                    <a href="#"><i class='bx bxl-sass'></i></a>
+                    <a href="#"><i class='bx bxl-git'></i></a>
+                    <a href="#"><i class='bx bxl-github'></i></a>
+                    <a href="#"><i class='bx bxl-figma'></i></a>
+                    <a href="#"><i class='bx bxl-react'></i></a>
+                    <a href="#"><i class='bx bxl-nodejs'></i></a>
+                    <a href="#"><i class='bx bxl-mongodb'></i></a>
+                </div>
+                <!-- Add this code inside the <body> tag -->
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h2>About Me</h2>
+                        <div class="p1">
+                            <p>Auparavant, j’ai travaillé pendant plusieurs années dans le domaine de l'horeca,
+                                principalement en tant que commis de cuisine et également dans le domaine de la vente en
+                                tant que vendeuse conseillère commerciale.</p><br>
+                        </div>
+                        <div class=p1>
+                            <p>J'ai décidé de me reconvertir dans le domaine du développement web, un domaine qui
+                                m'intéresse particulièrement. La passion pour le code, la résolution de problèmes et la
+                                création de solutions innovantes sont des éléments qui ont conduit à ce choix. Le
+                                développement web est un domaine en constante évolution, offrant des opportunités sans
+                                cesse
+                                renouvelées pour apprendre et se perfectionner chaque jour.</p><br>
+                        </div>
+                        <div class="p1">
+                            <p>J'ai choisi BeCode à Bruxelles pour la formation, qui m'a permis d'apprendre à créer des
+                                sites web en full-stack et d'y acquérir également des compétences techniques et
+                                professionnelles essentielles pour ma nouvelle carrière.</p><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div data-aos="zoom-in" class="btn">
+            <button id="myBtn">About Me</button>
+        </div>
+    </section>
+
+
+    <section class="projets" id="projets">
+        <div class="content">
+            <div class="projets-content">
+                <h2>Projets</h2>
+                <p>Voici quelques projets que j'ai réalisés au cours de ma formation :</p>
+            </div>
+            <div class="card-container">
+                <div class="card">
+
+                    <a href="BeMovies" target="_blank">
+                        <img src="BeMovies.JPG" class="img-projet">
+                    </a>
+                </div>
+                <div class="card">
+
+                    <a href="Tic Tac Toe" target="_blank">
+                        <img src="Tic tac toe.JPG" class="img-projet">
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="https://girls-power-julia-5rkv0hlsm-julias-projects-02d235ee.vercel.app/login" target="_blank">
+                        <img src="Job tracker.JPG" class="img-projet">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  
+    <section class="contact" id="contact">
+        <div class="content">
+            <h2>Contact</h2>
+            <div class="contact-content">
+
+                <div>
+                    <div class="icons-infos">
+                        <div class="mail"> <i class='bx bx-send'></i> pasquierjulia5@gmail.com </div><br>
+                        <div class="phone"><i class='bx bxs-phone'></i> 0470/78.38.42 </div>
+                    </div>
+                    <div class="icons">
+                        <a href="https://www.linkedin.com/in/julia-pasquier-9b18ba282/" target="_blank"><i
+                                class='bx bxl-linkedin-square'></i></a>
+
+                        <a href="https://github.com/JuliaPasquier" target="_blank"><i class='bx bxl-github'></i></a>
+                    </div>
+                </div>
+
+
+                <div class="contact-form">
+                    <form action="mailto:pasquierjulia5@gmail.com>
+                <input type=" text" placeholder="Nom" class="form-control" required>
+                        <input type="email" placeholder="Email" class="form-control" required>
+                        <textarea name="message" placeholder="Message" class="form-control" id="" cols="30" rows="10"
+                            required></textarea>
+                        <input type="submit" value="Envoyer" class="btn">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+</body>
+</html>

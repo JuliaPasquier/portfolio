@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Inter:wght@400;800&family=Pacifico&family=Pixelify+Sans:wght@400;600&family=Raleway&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background: radial-gradient(
+    circle at 5.6% 54.5%,
+    rgb(161, 151, 151) 0%,
+    rgb(120, 138, 161) 83.6%
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+header {
+  max-width: 1140px;
+  margin: auto;
+}
+h1 {
+  font-size: 45px;
+  margin: auto;
+  margin-bottom: 1em;
+  padding-top: 30px;
+  text-align: center;
+  font-family: "Indie Flower", cursive;
+}
+
+.container {
+  margin: 0 auto;
+  justify-content: center;
+  display: flex;
+  gap: 30px;
+  margin-bottom: 60px;
+
+}
+.img1 {
+  margin-top: 10%;
+  margin-right: 10%;
+  border-color: #1c241f;
+  border-style: solid;
+}
+.img2 {
+  margin-top: 10%;
+  border-color: #1c241f;
+  border-style: solid;
+  margin-left: 10%;
+}
+.board {
+  display: grid;
+  position: relative;
+  min-height: 500px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 4px;
+  grid-row-gap: 4px;
+  width: 20%;
+  height: 40%;
+  /* background-color: #4a7491;
+ border: 1px solid rgb(45, 73, 78); */
+  border-width: 10px;
+  border-radius: 30px;
+}
+
+.cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  cursor: pointer;
+  font-family: "Indie Flower", cursive;
+  border-radius: 25px;
+  background: radial-gradient(
+    circle at 5.6% 54.5%,
+    rgb(161, 190, 158) 0%,
+    rgb(159, 188, 198) 83.6%
+  );
+}
+
+.message {
+  margin: auto;
+  margin-bottom: 30px;
+  margin-top: 40px;
+  text-align: center;
+  font-family: "Indie Flower", cursive;
+  font-size: x-large;
+}
+.section {
+  margin: auto;
+  text-align: center;
+}
+
+a.restart {
+  font-size: inherit;
+  padding: 18px 80px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-weight: 700;
+  outline: none;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+  color: black;
+  overflow: hidden;
+  border-color: #61b888;
+  background-color: #4d4855;
+  border-radius: 20px;
+}
+
+a:hover.restart {
+  box-shadow: 0 20px 38px rgba(0, 0, 0, 0.16);
+  -ms-transform: translateY(-3px);
+  transform: translateY(-3px);
+  -webkit-transform: translateY(-3px);
+  background: #35312c;
+}
+@media (max-width: 600px) {
+  /* Styles for screens with a maximum width of 600px */
+  .container {
+      flex-direction: column;
+  }
+  .img1, .img2 {
+      width: 100%;
+      height: auto;
+  }
+}
